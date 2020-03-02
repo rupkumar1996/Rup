@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Best tricks to apply primer!</title>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+<!-- Link Swiper's CSS -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="js/externalFile.js"></script>
+<!-- Demo styles -->
+<!--google analystics tracking Id -->
+<script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'gaanalytics');
+
+        gaanalytics('create', 'UA-118065369-5', 'auto');
+        gaanalytics('send', 'pageview');
+         console.log('page view + analytics');
+    </script>
+</head>
+<body>
+<div class="overlay" style="z-index:1000; position: fixed;">
+<div class="loader-wrapper">
+<div class="loader1">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<p class="over-text">Taking you to the lock screen..</p>
+</div>
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-T4HVX6J" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<!-- Swiper -->
+<div class="swiper-container gallery-top">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+</div>
+</div>
+<!-- Add Arrows -->
+</div>
+<div class="swiper-container2" id="sliderId">
+<div class="slideItemDetails">
+<h5 class="slideItemTitle"></h5>
+<p class="slideItemTitleDesc"></p>
+<div class="container" id="dots">
+</div>
+<button class="btn btn-default slideItemBtn" data-attribute="" onclick="redirectUrl()">
+                view Product
+            </button>
+<div class="loaderIcon" id="loadergop">
+<div class="loader"></div>
+</div>
+<p style="opacity: 0.64; text-transform: none; margin-top: 8px; font-size: 8px; text-align: center; color: #ffffff; padding-top: 25px; padding-left: 12px; padding-right: 12px; padding-bottom: 4px;">
+                The products shown here are inspired from the model's/celebrities' outfits, accessories or general look and are not, in any manner, endorsed by the model or celebrity.
+</p>
+</div>
+<div class="swiper-wrapper2" id="secondSwipper">
+<!-- item -->
+<!-- Images of the product will upload dynamically -->
+<!-- item -->
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<script src="js/getData.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+<script src="js/scriptMain.js"></script>
+<!-- Initialize Swiper -->
+</body>
+<style>
+    .gallery-top .swiper-slide {
+        background-size: cover !important;
+    }
+</style>
+</html>

@@ -1,0 +1,106 @@
+body{
+    text-align: center;
+    background-color: black;
+    margin: 0 auto;
+}
+.title{
+    height: 55px;
+    background-color: white;
+}
+iframe{
+    background-color: transparent;
+    border: none;
+}
+.textSample{
+    color: white;
+    padding: 0 5%;
+    text-align: left;
+}
+footer{
+    padding: 0 5%;
+    text-align: left;
+    position: absolute;
+    bottom: 4%;
+}
+footer img{
+    height: 30px;
+}
+/* ##Device = Desktops ##Screen = 1281px to higher resolution desktops */
+@media (min-width: 1281px) {
+    body{
+        padding-top: 2%;
+   }
+    .videowrapper iframe {
+        width: 80%;
+        height: 500px;
+   }
+    .textSample{
+        padding: 0 10%;
+   }
+    footer{
+        padding: 0 10%;
+   }
+    footer img{
+        height: 40px;
+   }
+}
+/* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        padding-top: 2%;
+   }
+    .videowrapper iframe{
+        min-width: 80%;
+        height: 500px;
+   }
+    .textSample footer{
+        padding: 0 10%;
+   }
+    footer img{
+        height: 40px;
+   }
+}
+/* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    iframe{
+        min-width: 100%;
+        height: 380px;
+   }
+}
+/* ##Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    iframe{
+        min-width: 100%;
+        height: 380px;
+   }
+}
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    iframe{
+        min-width: 100%;
+        height: 380px;
+   }
+}
+/* ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+   /* iframe{
+        min-width: 300px;
+   }
+    */
+    .videowrapper {
+        float: none;
+        clear: both;
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+   }
+    .videowrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+   }
+}
